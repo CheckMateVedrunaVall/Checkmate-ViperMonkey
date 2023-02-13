@@ -1,0 +1,11 @@
+version: '3'
+services:
+  yara:
+    build: /home/ultron/proyecto/Checkmate-YARA
+    volumes:
+      - /app/samples
+      - /app/rules
+  vmon:
+    build: /home/ultron/proyecto/Checkmate-VMOn
+    volumes:
+      - /app/results
