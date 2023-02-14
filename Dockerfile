@@ -2,7 +2,7 @@
 FROM ubuntu:18.04
 
 # Commands
-RUN apt-get update -y
+RUN apt-get update -y --fix-missing
 RUN apt-get install python python-dev python-pip wget apt-transport-https software-properties-common unzip nano -y && \
     pip install --upgrade pip && \
     pip install --upgrade setuptools && \
