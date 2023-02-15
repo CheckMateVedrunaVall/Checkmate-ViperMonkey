@@ -74,7 +74,7 @@ Este pequeño script en bash ubicado en converter/ pedirá el Payload en base64 
 
 ![Script](/images/decoder_script.png)
 
-Una vez ejecutado el script en el directorio results/ habrá archivo payload_decoded.txt
+Una vez ejecutado el script en el directorio results/ habrá el archivo payload_decoded.txt
 
 ![DecodedScript](/images/decoder_result.png)
 
