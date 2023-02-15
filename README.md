@@ -12,7 +12,7 @@ Después hay un apartado que muestra el payload encodeado en base64
 
 ![Base64](/images/base64_payload.png)
 
-Otra cosa interesant que mostrará es una tabla con los IOC
+Otra cosa interesante que mostrará es una tabla con los IOC
 
 ![IOC1](/images/IOC_table.png)
 
