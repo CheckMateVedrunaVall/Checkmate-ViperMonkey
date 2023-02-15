@@ -76,7 +76,7 @@ Una vez ejecutado el script en el directorio results/ habrá archivo payload_dec
 
 ### Ejecutar deofuscador
 
-Dentro del directorio /converter hay otro script en python que lo que hace es limpiar los caracteres `'` y `+` para poder ver de mejor manera el payload. *IMPORTANTE PONER LA CADENA ENTRE COMILLAS DOBLES PARA QUE EL SCRIPT FUNCIONE. TAMBIÉN HAY QUE PASAR PREVIAMENTE EL CMDLET WRITE-HOST A LA CADENA. POWERSHELL VIENE INSTALADO DENTRO DEL CONTENEDOR*
+Dentro del directorio converter/ hay otro script en python que lo que hace es limpiar los caracteres `'` y `+` para poder ver de mejor manera el payload. *IMPORTANTE PONER LA CADENA ENTRE COMILLAS DOBLES PARA QUE EL SCRIPT FUNCIONE. TAMBIÉN HAY QUE PASAR PREVIAMENTE EL CMDLET WRITE-HOST A LA CADENA. POWERSHELL VIENE INSTALADO DENTRO DEL CONTENEDOR*
 
 `python cleaner.py`
 
