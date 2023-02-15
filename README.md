@@ -64,7 +64,7 @@ Dentro de la carpeta del repositorio poner:
 
 ### Ejecutar decoder
 
-Este pequeño script en bash ubicado en /converter pedirá el Payload en base64 y lo convertirá para que lo podamos leer.
+Este pequeño script en bash ubicado en converter/ pedirá el Payload en base64 y lo convertirá para que lo podamos leer.
 
 `bash decoder.sh`
 
