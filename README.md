@@ -36,7 +36,7 @@ https://www.virustotal.com/gui/file/e26b12859ce5d6654399ec144ba5196fa97bc04cf36d
 
 Dentro de la carpeta del repositorio poner:
 
-`docker build -t vmonkey .`
+`docker build -t vmonkey:latest .`
 
 ### Crear y ejecutar un contenedor
 
