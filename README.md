@@ -6,21 +6,21 @@ ViperMonkey es una herramienta desarrollada en python y su función principal es
 
 ViperMonkey extrae la macro del documento y lo muestra por pantalla. 
 
-![Macro](/images/macro_payload.png)
+![Macro](/Checkmate-VMon/images/macro_payload.png)
 
 Después hay un apartado que muestra el payload encodeado en base64
 
-![Base64](/images/base64_payload.png)
+![Base64](/Checkmate-VMon//images/base64_payload.png)
 
 Otra cosa interesant que mostrará es una tabla con los IOC
 
-![IOC1](/images/IOC_table.png)
+![IOC1](/Checkmate-VMon//images/IOC_table.png)
 
-![IOC2](/images/IOC_table2.png)
+![IOC2](/Checkmate-VMon//images/IOC_table2.png)
 
 Y por último mostrará funciones que ejecuta que pueden ser también indicadores de compromiso
 
-![PossibleIOC](/images/possible_IOC.png)
+![PossibleIOC](/Checkmate-VMon//images/possible_IOC.png)
 
 Sample utilizado: https://app.any.run/tasks/e472f974-4c58-428f-9159-016453f367d3/
 
@@ -61,3 +61,27 @@ Dentro de la carpeta del repositorio poner:
 #### Ejemplo 
 
 `vmonkey 1word.doc`
+
+### Ejecutar decoder
+
+Este pequeño script en bash ubicado en /converter pedirá el Payload en base64 y lo convertirá para que lo podamos leer.
+
+`bash decoder.sh`
+
+![Script](/Checkmate-VMon/images/decoder_script.png)
+
+Una vez ejecutado el script en el directorio results/ habrá archivo payload_decoded.txt
+
+![DecodedScript](/Checkmate-VMon/images/decoder_result.png)
+
+### Ejecutar deofuscador
+
+Dentro del directorio /converter hay otro script en python que lo que hace es limpiar los caracteres `'` y `+` para poder ver de mejor manera el payload. *IMPORTANTE PONER LA CADENA ENTRE COMILLAS DOBLES PARA QUE EL SCRIPT FUNCIONE. TAMBIÉN HAY QUE PASAR PREVIAMENTE EL CMDLET WRITE-HOST A LA CADENA. POWERSHELL VIENE INSTALADO DENTRO DEL CONTENEDOR*
+
+`python cleaner.py`
+
+![PythonDeobf](/Checkmate-VMon/images/python_script.png)
+
+El script guarda el resultado en el directorio results/ como plaintext_payload.txt
+
+![PlaintextResult](/Checkmate-VMon/images/plaintext.png)
