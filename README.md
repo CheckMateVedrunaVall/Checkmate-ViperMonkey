@@ -50,6 +50,10 @@ Dentro de la carpeta del repositorio poner:
 
 `docker stop [nombre del contenedor]`
 
+### Encender el contenedor
+
+`docker start [nombre del contenedor]`
+
 ### Descomprimir samples
 
 `unzip [archivo].zip`
